@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!---
+    * Copyright (C) 2017 The Android Open Source Project
+    * This app "You Stay Young" is for people who want to check
+    * if their habits are healthy for body and soul
+    * Is created with android studio 2.3.1
+    * as exercise for Android Basics by Google Nanodegree Program
+    * "Habit Tracker " by Dimitra Christina Nikolaidou
+
+    -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatalogActivity">
+
+    <TextView
+        android:id="@+id/text_view_body_action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_margin" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@mipmap/ico_add_body_action" />
+</RelativeLayout>

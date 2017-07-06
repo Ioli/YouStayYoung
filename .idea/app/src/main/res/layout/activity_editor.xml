@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!---
+    * Copyright (C) 2017 The Android Open Source Project
+    * This app "You Stay Young" is for people who want to check
+    * if their habits are healthy for body and soul
+    * Is created with android studio 2.3.1
+    * as exercise for Android Basics by Google Nanodegree Program
+    * "Habit Tracker " by Dimitra Christina Nikolaidou
+
+    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context="com.example.android.youstayyoung.EditorActivity">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_action" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_padding_left">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_bodyaction_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_action_name"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Measurment category -->
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_measurement" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_padding_left">
+
+
+            <!-- Input fields -->
+            <!-- Time field -->
+            <LinearLayout
+                android:id="@+id/container_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingLeft="@dimen/activity_padding_left">
+
+                    <!-- Time field -->
+                    <EditText
+                        android:id="@+id/edit_bodyaction_time"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_action_time"
+                        android:inputType="number" />
+
+                    <!-- Units for minutes of time (min) -->
+                    <TextView
+                        android:id="@+id/label_time_units"
+                        style="@style/EditorUnitsStyle"
+                        android:text="@string/unit_action_time" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Distance field -->
+            <LinearLayout
+                android:id="@+id/container_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingLeft="@dimen/activity_padding_left">
+
+                    <EditText
+                        android:id="@+id/edit_bodyaction_distance"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_action_distance"
+                        android:inputType="number" />
+
+                    <!-- Units for Kilometres (m) -->
+                    <TextView
+                        android:id="@+id/label_distance_units"
+                        style="@style/EditorUnitsStyle"
+                        android:text="@string/unit_action_distance" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Burned Calories field -->
+            <LinearLayout
+                android:id="@+id/container_burned_calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingLeft="@dimen/activity_padding_left">
+
+                    <EditText
+                        android:id="@+id/edit_bodyaction_calories"
+                        style="@style/EditorFieldStyle"
+                        android:layout_alignBaseline="@+id/label_calories_units"
+                        android:layout_alignBottom="@+id/label_calories_units"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:hint="@string/hint_action_calories"
+                        android:inputType="number" />
+
+                    <!-- Units for calories (cal) -->
+                    <TextView
+                        android:id="@+id/label_calories_units"
+                        style="@style/EditorUnitsStyle"
+                        android:text="@string/unit_action_calories" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

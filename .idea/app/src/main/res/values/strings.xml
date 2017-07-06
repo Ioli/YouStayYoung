@@ -1,0 +1,55 @@
+<resources>
+
+    <string name="app_name">You Stay Young</string>
+
+    <!-- Label for overflow menu option that inserts fake action data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all action data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Actions</string>
+
+    <!-- Title for the activity to add a new action [CHAR LIMIT=20] -->
+    <string name="editor_activity_new_action">Add an Action</string>
+
+    <!-- Label for editor menu option to save action and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current action [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Label for name of action category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_action">Name</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_action_name">Action for staying YOUNG</string>
+
+    <!-- Label for measurement information in the editor [CHAR LIMIT=30] -->
+    <string name="category_measurement">Measurement</string>
+
+    <!-- Label for distance information in the editor [CHAR LIMIT=30] -->
+    <string name="category_distance">Distance</string>
+
+    <!-- Text hint for distance field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_action_distance">How far you went?</string>
+
+    <!-- Units for distance of the action (metres) [CHAR LIMIT=5] -->
+    <string name="unit_action_distance">m</string>
+
+    <!-- Label for time information in the editor [CHAR LIMIT=30] -->
+    <string name="category_time">Time</string>
+
+    <!-- Text hint for time field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_action_time">How many minutes?</string>
+
+    <!-- Units for time of the action (minutes) [CHAR LIMIT=5] -->
+    <string name="unit_action_time">min</string>
+
+    <!-- Label for burned energy information in the editor [CHAR LIMIT=30] -->
+    <string name="category_calories">Burned Energy</string>
+
+    <!-- Text hint for energy field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_action_calories">How many Calories?</string>
+
+    <!-- Units for calories of the action (calories) [CHAR LIMIT=5] -->
+    <string name="unit_action_calories">cal</string>
+</resources>
